@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, Container, FormControl, FormLabel, Input, Textarea, VStack, useToast } from '@chakra-ui/react';
+import { Box, Button, Container, FormControl, FormLabel, Input, Textarea, VStack, useToast, useColorModeValue } from '@chakra-ui/react';
 
 const AddPost = () => {
   const [title, setTitle] = useState('');
@@ -22,7 +22,7 @@ const AddPost = () => {
 
   return (
     <Container maxW="container.md" p={4}>
-      <Box as="form" onSubmit={handleSubmit} p={4} borderWidth="1px" borderRadius="md" boxShadow="md">
+      <Box as="form" onSubmit={handleSubmit} p={4} borderWidth="1px" borderRadius="md" boxShadow="md" bg={useColorModeValue("white", "gray.700")} color={useColorModeValue("black", "white")}>
         <VStack spacing={4}>
           <FormControl id="title" isRequired>
             <FormLabel>Title</FormLabel>

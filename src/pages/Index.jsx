@@ -1,10 +1,10 @@
-import { Box, Container, Flex, Heading, Text, VStack, HStack, Link, Spacer } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Text, VStack, HStack, Link, Spacer, useColorModeValue } from "@chakra-ui/react";
 import { FaHome, FaUser, FaEnvelope, FaPlus } from "react-icons/fa";
 
 const Index = () => {
   return (
     <Container maxW="container.xl" p={4}>
-      <Flex as="nav" bg="gray.800" color="white" p={4} borderRadius="md" mb={6}>
+      <Flex as="nav" bg={useColorModeValue("gray.800", "gray.200")} color={useColorModeValue("white", "black")} p={4} borderRadius="md" mb={6}>
         <HStack spacing={8}>
           <Link href="#" fontSize="xl" fontWeight="bold">
             MyBlog
@@ -26,15 +26,15 @@ const Index = () => {
       <Flex>
         <Box flex="3" p={4}>
           <VStack spacing={6} align="stretch">
-            <Box p={5} shadow="md" borderWidth="1px">
+            <Box p={5} shadow="md" borderWidth="1px" bg={useColorModeValue("white", "gray.700")} color={useColorModeValue("black", "white")}>
               <Heading fontSize="xl">Blog Post Title 1</Heading>
               <Text mt={4}>This is a summary of the blog post content. It should be engaging and give an idea of what the post is about.</Text>
             </Box>
-            <Box p={5} shadow="md" borderWidth="1px">
+            <Box p={5} shadow="md" borderWidth="1px" bg={useColorModeValue("white", "gray.700")} color={useColorModeValue("black", "white")}>
               <Heading fontSize="xl">Blog Post Title 2</Heading>
               <Text mt={4}>This is a summary of the blog post content. It should be engaging and give an idea of what the post is about.</Text>
             </Box>
-            <Box p={5} shadow="md" borderWidth="1px">
+            <Box p={5} shadow="md" borderWidth="1px" bg={useColorModeValue("white", "gray.700")} color={useColorModeValue("black", "white")}>
               <Heading fontSize="xl">Blog Post Title 3</Heading>
               <Text mt={4}>This is a summary of the blog post content. It should be engaging and give an idea of what the post is about.</Text>
             </Box>
