@@ -1,5 +1,5 @@
 import { Box, Container, Flex, Heading, Text, VStack, HStack, Link, Spacer } from "@chakra-ui/react";
-import { FaHome, FaUser, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaUser, FaEnvelope, FaPlus } from "react-icons/fa";
 
 const Index = () => {
   return (
