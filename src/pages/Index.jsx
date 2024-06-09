@@ -13,6 +13,7 @@ const Index = () => {
             <Link href="#"><FaHome /> Home</Link>
             <Link href="#"><FaUser /> About</Link>
             <Link href="#"><FaEnvelope /> Contact</Link>
+            <Link href="/add-post"><FaPlus /> Add Post</Link>
           </HStack>
         </HStack>
         <Spacer />
